@@ -12,7 +12,8 @@ import Occupancy from './components/contents/Occupancy';
 import MutationReason from './components/contents/MutationReason';
 import BuildingClassification from './components/contents/BuildingClassification';
 
-import CreateNewFunction from './components/contents/CreateNewFunction'
+import CreateNewFunction from './components/contents/CreateNewFunction';
+import ViewFunction from './components/contents/ViewFunction'
 
 // import App from "./components/App";
 
@@ -20,6 +21,7 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={CreateNewFunction}/>
+      <Route exact path='/view-function' component={ViewFunction}/>
       <Route exact path='/PropertyTaxSearch' component={PropertyTaxSearch}/>
       <Route exact path='/test' component={Test}/>
       <Route exact path='/floor-type' component={FloorType}/>
